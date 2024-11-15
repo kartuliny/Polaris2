@@ -1,9 +1,9 @@
 {
-  "test_server_ids": ["12345678"],
+  "test_server_ids": ["758765323444027434"],
 
-  "developer_ids": ["12345678"],
+  "developer_ids": ["711231567158050878"],
 
-  "lockBotToDevOnly": false,
+  "lockBotToDevOnly": true,
   
   "enableWebServer": true,
   "serverPort": 6880,
