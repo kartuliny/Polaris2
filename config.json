@@ -4,8 +4,8 @@
   "lockBotToDevOnly": false,
   
   "enableWebServer": true,
-  "serverPort": 6880,
-  "siteURL": "http://localhost:6880",
+  "serverPort": 80,
+  "siteURL": "https://polaris2.onrender.com",
   
   "changelogURL": "",
   "supportURL": ""
