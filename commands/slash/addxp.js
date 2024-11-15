@@ -17,8 +17,10 @@ metadata: {
 async run(client, int, tools) {
 
     const member = int.options.get("member")?.member
+    const executor = await int.guild.members.fetch(int.user.id);
+    const roleId = "1251229827151691897";
 
-    if (!member.roles.cache.has('1251229827151691897')) {
+    if (!executor.roles.cache.has(roleId)) {
         return tools.warn("You can't give XP to bots, silly!");
     }
     
