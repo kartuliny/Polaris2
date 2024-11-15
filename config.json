@@ -1,13 +1,11 @@
 {
   "test_server_ids": ["758765323444027434"],
-
-  "developer_ids": ["711231567158050878"],
-
-  "lockBotToDevOnly": true,
+  "developer_ids": ["711231567158050878", "890601500550791220"],
+  "lockBotToDevOnly": false,
   
   "enableWebServer": true,
-  "serverPort": 6880,
-  "siteURL": "http://localhost:6880",
+  "serverPort": 80,
+  "siteURL": "https://polaris2.onrender.com",
   
   "changelogURL": "",
   "supportURL": ""
