@@ -1,8 +1,7 @@
 module.exports = {
 metadata: {
-    permission: "ManageGuild",
     name: "addxp",
-    description: "Add or remove XP from a member. (requires manage server permission)",
+    description: "Add or remove XP from a member.",
     args: [
         { type: "user", name: "member", description: "Which member to modify", required: true },
         { type: "integer", name: "xp", description: "How much XP to add (negative number to remove XP)", min: -1e10, max: 1e10, required: true },
@@ -18,6 +17,11 @@ metadata: {
 async run(client, int, tools) {
 
     const member = int.options.get("member")?.member
+
+    if (!member.roles.cache.has('1251229827151691897')) {
+        return tools.warn("You can't give XP to bots, silly!");
+    }
+    
     const amount = int.options.get("xp")?.value
     const operation = int.options.get("operation")?.value || "add_xp"
 
